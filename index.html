@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header  ">
+  <div class="container header__container">
+    <a class="header__logo" href="#" target="blank">
+      <img class="logo__img" src="img/myteam.svg" alt="site logo" width="160" height="40">
+    </a>
+
+    <div class="sitenav-wrapper">
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="list__item">
+            <a class="list__link" href="#">home</a>
+          </li>
+          <li class="list__item">
+            <a class="list__link" href="#">about</a>
+          </li>
+        </ul>
+        <a class="sitenav__link" href="#">contact us</a>
+
+      </nav>
+      <button class="header__toggle" type="button"></button>
+    </div>
+  </div>
+
+  <script>
+    var elHeaderToggle = document.querySelector('.header__toggle');
+    var elSiteHeader = document.querySelector('.site-header');
+
+    elHeaderToggle.addEventListener('click', function (){
+      elSiteHeader.classList.toggle('site__header--open');
+    });
+  </script>
+</header>
+</body>
+</html>
